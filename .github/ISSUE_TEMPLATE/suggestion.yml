@@ -1,0 +1,34 @@
+name: "💡 Suggestion / Feature request"
+description: "Proposez une fonctionnalite ou une amelioration. / Suggest a feature or improvement."
+title: "[Idee] "
+labels: ["status: suggested"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de contribuer a la roadmap HG-Hosting ! Avant de poster, verifiez les doublons et **votez avec un pouce sur les idees existantes**.
+  - type: textarea
+    id: idea
+    attributes:
+      label: "L'idee / The idea"
+      description: "Decrivez la fonctionnalite souhaitee."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "Pourquoi c'est utile / Why it matters"
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Domaine / Area"
+      options:
+        - "Jeux / Game servers"
+        - "VPS / Dedie"
+        - "Reseau & Anti-DDoS"
+        - "Panel / Espace client"
+        - "Facturation / Billing"
+        - "Site web / Website"
+        - "Autre / Other"
+    validations:
+      required: true
